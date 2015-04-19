@@ -1,0 +1,127 @@
+
+<!-- saved from url=(0116)https://smartsite.ucdavis.edu/access/content/group/016207a1-14f5-4660-9133-cb932277b937/Labs/Lab%203/widgetSimp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Weather App</title>
+
+
+</head>
+
+<body>
+
+	<h1> By Lucas Hom</h1>
+	<!-- Bootstrap always begins with a container -->
+	<div class="container text-center">
+
+		<!-- the app appears in a single row -->	
+		<div class="row">
+			<!-- 4 columns wide and moved over 4 columns = centered --> 
+			<div class="col-sm-4 col-sm-offset-4" id="weather_app">
+
+				<!-- now the actual contents; nested in that middle chunk -->	
+				<!-- top row fills up all 12 columns of inner grid -->
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Weather App</h1>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-sm-12">
+						<img id="weather_img" >				
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<p id="zip"><d/p>
+						</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<p id="city"><d/p>
+						</div>
+				</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<p id="weather"></p>
+						</div>
+					</div>		
+
+					<div class="row">
+						<div class="col-sm-12">
+							<p id="temp"></p>
+						</div>
+					</div>		
+
+					<div class="row">
+						<div class="col-sm-12">
+							<p id="onedaycondition"></p>
+						</div>
+					</div>		
+
+					<div class="row">
+						<div class="col-sm-6">
+							<p id="onedayhigh"></p>
+						</div>
+						<div class="col-sm-6">
+							<p id="onedaylow"></p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<p id="twodaycondition"></p>
+						</div>
+					</div>		
+
+					<div class="row">
+						<div class="col-sm-6">
+							<p id="twodayhigh"></p>
+						</div>
+						<div class="col-sm-6">
+							<p id="twodaylow"></p>
+						</div>
+					</div>
+
+
+					<hr> <!-- the horizontal line -->
+					<div class="row">
+						<!-- fills up 8 columns, moved over 2 = centered -->
+						<div class="col-sm-8 col-sm-offset-2">
+							<!-- <form class="form-horizontal" action="https://smartsite.ucdavis.edu/access/content/group/016207a1-14f5-4660-9133-cb932277b937/Labs/Lab%203/widget3.html" method="get"> -->
+							<div class="form-group">
+								<!-- <label>Please enter zip code:</label> -->
+								<!-- <input class="form-control" type="text" min="0" pattern="\d{5,5}" placeholder="12345" name="zip"> -->
+								<label for="codeInput">Enter a zipcode:</label>
+								<input id="codeInput"  />
+								<br/>
+								<button onclick="process()">Process code</button>
+								<button onclick="processForecast()">Get Forecast</button>
+							</div>	
+						</div> <!-- column --> 
+					</div> <!-- last row -->
+
+					<div class="row">
+						<div class="footer">
+							<a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/> </a>  
+						</div>
+					</div>
+
+				</div> <!-- column of enclosing row -->
+			</div> <!-- enclosing row -->
+		</div> <!-- container -->
+
+	</br>
+	<!-- get bootstrap over the internet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="./Weather_App_files/bootstrap.min.js"></script>
+
+	<!-- css file for this app -->
+
+	<link rel="stylesheet" href="css/style.css">   
+
+	<script src="js/weather.js"></script>
+	<!-- <script id="weatherQuery" src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 2389646&format=json&callback=callbackFunction"></script> -->
+</body></html>
