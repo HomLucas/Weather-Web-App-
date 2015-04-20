@@ -9,6 +9,13 @@ var callbackFunction = function(data) {
     
 	document.getElementById("temp").innerHTML = ("<b>Temperature: </b>"+temp);
 	document.getElementById("weather").innerHTML = ("<b>Weather Condition: </b>"+ condition);
+	
+	 document.getElementById("onedaycondition").innerHTML = (" " );
+    document.getElementById("onedayhigh").innerHTML = (" " );
+    document.getElementById("onedaylow").innerHTML = (" ");
+    document.getElementById("twodaycondition").innerHTML = (" ");
+    document.getElementById("twodayhigh").innerHTML = (" ");
+    document.getElementById("twodaylow").innerHTML = (" ");
 
 	var pic=document.getElementById("weather_img");
 
