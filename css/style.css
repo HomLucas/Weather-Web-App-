@@ -2,7 +2,13 @@
 
 /* applies to the whole body */	
 body{
-	background-color: #66CCFF;
+	/* background-color: #66CCFF; */
+	background-image: url(http://www.hdwallpaperscool.com/wp-content/uploads/2015/03/beautiful-landscape-wide-desktop-background-hd-wallpaper.jpg);
+}
+
+#author{
+	margin-left: 10px;
+	color: white;
 }		
 
 /* applies to the horizontal line formed
